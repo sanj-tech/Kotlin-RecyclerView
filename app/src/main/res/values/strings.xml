@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">RecyclerViewPractice</string>
+    <string name="desc_name">RecyclerView is the ViewGroupThe  that contains the views corresponding to your data. It\'s a view itself, so you add RecyclerView into your layout the way you would add any other UI element. Each individual element in the list is defined by a view holder object
+ RecyclerView class extends the ViewGroup class and implements ScrollingView interface. \n\n
+        that contains the views corresponding to your data. It\'s a view itself, so you add RecyclerView into your layout the way you would add any other UI element. Each individual element in the list is defined by a view holder object
+ It is introduced in Marshmallow.\n \n
+        It is an advanced version of the ...
+    RecyclerView is the ViewGroupThe  that contains the views corresponding to your data. It\'s a view itself, so you add RecyclerView into your layout the way you would add any other UI element. Each individual element in the list is defined by a view holder object
+ RecyclerView class extends the ViewGroup class and implements ScrollingView interface. that contains the views corresponding to your data. It\'s a view itself, so you add RecyclerView into your layout the way you would add any other UI element. Each individual element in the list is defined by a view holder object
+ It is introduced in Marshmallow. It is an advanced version of the ...
+        RecyclerView is the ViewGroupThe  that contains the views corresponding to your data. It\'s a view itself, so you add RecyclerView into your layout the way you would add any other UI element. Each individual element in the list is defined by a view holder object
+ RecyclerView class extends the ViewGroup class and implements ScrollingView interface. that contains the views corresponding to your data. It\'s a view itself, so you add RecyclerView into your layout the way you would add any other UI element. Each individual element in the list is defined by a view holder object
+ It is introduced in Marshmallow. It is an advanced version of the ...\n\n
+
+        Thans and Regards\n\n
+        (N) Ms. SaNj.. \n\n
+        (E) - pandeysanj716@gmail.com\n\n
+        (W) - www.google.com\n\n
+        (M) - 7709655847</string>
+   <string name="de_name">The RecyclerView class extends
+       the ViewGroup class and implements ScrollingView interface.
+       It is introduced in Marshmallow. It is an advanced version of the ...</string>
+    The column parameters specify the names of the columns of the table.
+
+    The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).
+
+    Tip: For an overview of the available data types, go to our complete Data Types Reference.
+
+    SQL CREATE TABLE Example
+    The following example creates a table called "Persons" that contains five columns: PersonID, LastName, FirstName, Address, and City:
+
+    Example
+    CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+    );
+    <string name="room">Below are all steps covered in this blog
+How to use the Room database
+How to add Room Database in android studio
+Insert,Update,Delete record
+How to pass query in Database
+What is a Room?
+The Room strong library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
+
+Normally Room databases are fast created and have good performance like reading, updating and deleting records. Room Database makes everything easy and fast
+
+Room Database more detail open this link: https://developer.android.com/training/data-storage/room/
+Components of Room Here room have main 3 components
+Entity:
+Instead of creating the SQLite table, we will create the Entity. An entity is nothing but a model class annotated with @Entity. The variables of this class are our columns, and the class is our table.
+Database:
+It is an abstract class where we define all our entities.
+DAO:
+Stands for Data Access Objects. It is an interface that defines all the operations that we need to perform in our database.
+Demo App Create
+First, we create a new project in android studio.
+Name of my project "Room DataBase"
+Adding Dependencies
+Add needed dependencies for the room database.
+Android studio in this file add dependencies "build.gradle".
+See the below image and add the latest version room database replace here "$room_version" add original version
+First, we will create DAO class:
+This DAO class-main work intermediary between the user and database. All performed operations are defined here.
+Below create StudentDao class
+@Dao
+public interface StudentDao {
+
+@Query("SELECT * FROM Student")
+
+
+@Insert
+void insert(Student student);
+
+@Update
+void updateTask(Student student);
+
+@Delete
+void deleteTask(Student student);
+}</string>
+
+</resources>

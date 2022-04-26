@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/poemDetail_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/poemDetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Poem Title"
+      android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/poemDetail_Desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/desc_name"/>
+    </ScrollView>
+
+</LinearLayout>
